@@ -1,10 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* TYPHOGRAPHY */
+
+h1 {
+    color: #362f36;
+}
+
+p {
+    color: #898989;
+}
+
+.highlighted {
+    color: #67bdec;
+}
+
+/* Wrapper */
+
+.wrapper {
+    padding-left: 140px;
+    padding-right: 140px;
+}
 
 /* Navigation Styling */
-
 
 nav {
     display: flex;
@@ -35,3 +58,76 @@ nav > ul > li {
 .nav-logo {
     margin-right: auto;
 }
+
+/* Header Design */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-info {
+    list-style-type: none;
+    float: right;
+    max-width: 70%;
+}
+
+.header-img {
+    max-width: 50%;
+    float: left;
+}
+
+.platforms {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.light-note {
+    color: #dcd7db;
+    font-size: 12px;
+}
+
+/* Responsive GRID SYSTEM */
+
+/* .flex-container {
+    list-style-type: none;
+    float: right;
+    max-width: 70%;
+} */
+
+/* PRODUCTO AREA DESIGN */
+
+.product-1 {
+    background-color: #d0e9ea;
+    text-align: center;
+}
+
+.product-2 {
+    background-color: #edf8f5;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
