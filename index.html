@@ -22,9 +22,11 @@
     
     <!-- NAVIGATION -->
 
-    <nav class="navbar">
+    <nav class="navbar" id="myTopnav">
         <!-- <div class="wrapper"> -->
-           <ul>
+            
+        <a  class="burger-nav"><i class="fa fa-bars"></i></a>
+           <ul class="open">
                 <li class="nav-logo"><a href="#"><img src="img/logo.png" width="120px"></a></li>
         
                 <li><a href="#">Download</a></li>
@@ -33,43 +35,46 @@
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Get in Touch</a></li>
                 <li><a href="#"><i class="fa fa-globe"></i> lang</a></li>
+
             </ul>
         <!-- </div> -->
     </nav>
 
     <header class="header">
-        <section class="col-6">
-            <ul class="header-info">
+        <section class="header-info">
+            <ul class="header-info-list">
                 <li><h1>Simple. Secure. <br> Reliable messaging.</h1></li>
                 <li><p>With WhatsApp, you'll get fast, simple, secure messaging and calling for free*, available on phones all over the world.</p></li>
-                <li><p class="light-note">*Data charges may apply. Contact your provider for details.</p></li>
+                <li><p class="light-note hide">*Data charges may apply. Contact your provider for details.</p></li>
 
                 <li class="platforms highlighted"><i class="fa fa-android"> Android</i></li>
                 <li class="platforms highlighted"><i class="fa fa-apple"> iPhone</i></li>
                 <li class="platforms highlighted"><i class="fa fa-desktop"> MAC or Windows PC</i></li>
                 <li class="platforms highlighted"><i class="fa fa-windows"></i> Windows Phone</li>
             </ul>
-        </section>
-        <section class="col-6">
-                <img src="img/1.png" alt="">
+
+            <button class="download-btn">DOWNLOAD NOW</button>
+
+            <img src="img/1.png" class="header-img" alt="">
+
         </section>
     </header>
 
     <!-- DESCRIPTION SECTION -->
 
-    <section class="row">
-        <section class="col-6 product product-1">
+    <section class="product-container">
+        <section class="product product-1">
             <h1>WhatsApp Business App</h1>
 
             <p>
-                    <a class="highlighted">WhatsApp Business</a> is an Android app which is free to download, and was built with the small business owner in mind. With the app, businesses can interact with customers easily by using tools to automate, sort, and quickly respond to messages. If you're a large business, <a class="highlighted">learn more about the WhatsApp Business API.</a> 
+                <a class="highlighted">WhatsApp Business</a> is an Android app which is free to download, and was built with the small business owner in mind. With the app, businesses can interact with customers easily by using tools to automate, sort, and quickly respond to messages. If you're a large business, <a class="highlighted">learn more about the WhatsApp Business API.</a> 
             </p>
 
             <img class="product-img" src="img/2.png" alt="Product image">
 
         </section>
 
-        <section class="col-6 product product-2">
+        <section class="product product-2">
 
             <img src="img/round-animation.png" alt="">
 
@@ -81,11 +86,11 @@
 
     <!-- Footer -->
 
-    <footer class="footer row">
-        <section class="col-3">
+    <footer class="footer-container">
+        <section class="column-1">
 
             <ul class="footer-links">
-                <li class="list-heading"><p>WHATSAPP</p></li>
+                <li><p class="list-heading">WHATSAPP</p></li>
                 <li>Features</li>
                 <li>Security</li>
                 <li>Download</li>
@@ -95,7 +100,7 @@
             
         </section>
 
-        <section class="col-3">
+        <section class="column-2">
 
          <ul class="footer-links">
               <li><p class="list-heading">COMPANY</p></li>
@@ -108,7 +113,7 @@
 
         </section>
 
-        <section class="col-3">
+        <section class="column-3">
                 <ul class="footer-links">
                     <li><p class="list-heading">Download</p></li>
                     <li>Mac/PC</li>
@@ -119,7 +124,7 @@
                 </ul>
         </section>
         
-        <section class="col-3">
+        <section class="column-4">
             <ul class="footer-links">
                 <li><p class="list-heading">Help</p></li>
                 <li>FAQ</li>
@@ -136,6 +141,17 @@
         </center>
     </footer>
 
+
+    <!-- Responsive Navigation -->
+
+<script src="js/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+    $(".burger-nav").on("click", function(){
+        $("nav ul").toggleClass("open");
+    });
+});
+</script>
 
 </body>
 </html>
